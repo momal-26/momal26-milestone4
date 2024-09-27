@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Resume Generator</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <h1>Resume Generator</h1>  
+    <form id="resumeForm">  
+        <h2>Personal Information</h2>  
+        <label for="name">Name:</label>  
+        <input type="text" id="name" required><br>  
+
+        <label for="email">Email:</label>  
+        <input type="email" id="email" required><br>  
+
+        <label for="phone">Phone:</label>  
+        <input type="tel" id="phone"><br>  
+
+        <h2>Experience</h2>  
+        <div id="experienceContainer">  
+            <input type="text" class="experience" placeholder="Experience Title" required>  
+        </div>  
+        <button type="button" id="addExperience">Add Experience</button>  
+
+        <h2>Education</h2>  
+        <div id="educationContainer">  
+            <input type="text" class="education" placeholder="Education Title" required>  
+        </div>  
+        <button type="button" id="addEducation">Add Education</button>  
+
+        <h2>Skills</h2>  
+        <div id="skillsContainer">  
+            <input type="text" class="skill" placeholder="Skill" required>  
+        </div>  
+        <button type="button" id="addSkill">Add Skill</button>  
+
+        <button type="submit">Generate Resume</button>  
+    </form>  
+
+    <div id="resumeOutput"></div>  
+
+    <script src="index.js" type="module"></script>  
+</body>  
+</html>  
